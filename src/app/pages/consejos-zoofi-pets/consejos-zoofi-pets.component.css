@@ -1,0 +1,602 @@
+/* CSS DE INTRODUCCIÓN */
+/* Estilos generales */
+.blog-section {
+    text-align: left;
+    padding: 20px;
+}
+
+
+
+
+
+
+/* Título del blog */
+.blog-title {
+    font-size: 36px; /* Tamaño de la letra */
+    font-weight: bold;
+    color: #232323; /* Color negro grisáceo */
+    font-family: 'Montserrat', sans-serif; /* Fuente exacta similar */
+    margin-bottom: 10px;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.blog-title:hover {
+    transform: scale(1.1); /* Aumenta el tamaño */
+    color: #0000ff; /* Cambia el color del texto al azul */
+}
+
+.blog-title::after {
+    content: '';
+    display: block;
+    width: 550px; /* Longitud de la línea */
+    height: 4px; /* Grosor de la línea */
+    background: linear-gradient(to right, #0000ff, #800080); /* Gradiente azul-morado */
+    margin-left: 450px; /* Parámetro para mover LA LINEA de izquierda a derecha */
+    margin-top: 5px;
+    transition: transform 0.3s ease; /* Transición suave para la línea */
+}
+
+.blog-title:hover::after {
+    transform: scale(1.1); /* Aumenta el tamaño de la línea */
+}
+
+/* Descripción del blog */
+.blog-description {
+    font-size: 24px; /* Tamaño exacto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #0F2C5C; /* Azul profundo */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+/* Estilos para la animación de tarjetas */
+.animated-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo del botón morado */
+.btn-purple {
+    background-color: #6a1b9a;
+    border-color: #6a1b9a;
+}
+
+.btn-purple:hover {
+    background-color: #8e24aa;
+    border-color: #8e24aa;
+}
+
+/* Estilo para el texto de las tarjetas */
+.card-body {
+    position: relative;
+}
+
+.card-title, .card-text {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Estilos adicionales */
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTENEDOR DE 4 TARJETAS DE INFORMACION */
+.beneficios-container {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Espaciado entre bloques */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre los bloques */
+    background-color: #f2fce9; /* Fondo verde claro */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Ocupa toda la página horizontalmente */
+    margin: 0 auto; /* Centrado */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Estilo general de cada bloque */
+.beneficio {
+    display: flex;
+    align-items: center; /* Alinea verticalmente icono y texto */
+    gap: 10px; /* Espacio entre icono y texto */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    flex: 1; /* Bloques ajustables proporcionalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    cursor: pointer; /* Indica interactividad */
+}
+
+.beneficio:hover {
+    transform: translateY(-10px); /* Levanta el bloque */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+/* Iconos */
+.icono {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño reducido del círculo */
+    height: 80px;
+    overflow: hidden; /* Recorte dentro del círculo */
+}
+
+.icono img {
+    width: 80%; /* Imagen más pequeña dentro del círculo */
+    height: 80%;
+    object-fit: cover; /* Recorte proporcional para cubrir el círculo */
+}
+
+/* Texto */
+.texto {
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+.texto h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* Tamaño ajustado */
+    font-weight: 700; /* Negrita */
+    color: #2d2d2d; /* Negro/gris oscuro */
+}
+
+.texto p {
+    margin: 0;
+    font-size: 0.9em; /* Tamaño ajustado */
+    color: #666; /* Gris claro */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la seccion de imagenes */
+.movie-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom right, #ffffff);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el encabezado */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffc107;
+}
+
+.header h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.header-image {
+    margin-top: 20px;
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Estilos para las imagenes de animalitos */
+.movie-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos para cada tarjeta */
+.movie-card {
+    position: relative;
+    width: 200px; /* Ancho de cada tarjeta */
+    height: 300px; /* Altura de cada tarjeta */
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out; /* Animación de transformación */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Estilos para la superposición de texto (card-overlay) */
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 1; /* Mostrar siempre la superposición */
+    text-align: center; /* Centrar el contenido */
+}
+
+.card-overlay .card-title {
+    font-size: 18px;
+    color: #f2f2f2; /* Color del título */
+    margin-bottom: 5px;
+    text-align: center; /* Centrar el título */
+}
+/* Estilos para la descripción dentro de la superposición de texto (card-overlay) */
+.card-overlay .card-description {
+    font-size: 14px;
+    color: #f2f2f2; /* Cambio de color para la descripción */
+}
+
+
+
+
+
+
+
+
+/* Contenedor DE LOS DATOS FINALES */
+.informacion-container {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Espaciado uniforme entre bloques */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre bloques */
+    background-color: #f2fce9; /* Fondo verde claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%; /* Ocupa toda la fila horizontal */
+    margin: 0 auto; /* Centra el contenedor */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Bloques individuales */
+.info-bloque {
+    display: flex;
+    align-items: center; /* Alineación vertical centrada */
+    gap: 10px; /* Espacio entre icono y texto */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    flex: 1; /* Bloques ajustables proporcionalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    cursor: pointer; /* Indica interactividad */
+}
+
+.info-bloque:hover {
+    transform: translateY(-10px); /* Efecto de levantamiento */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Iconos */
+.info-icono {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño del círculo */
+    height: 80px;
+    overflow: hidden; /* Recorte dentro del círculo */
+}
+
+.info-icono img {
+    width: 80%; /* Imagen más pequeña */
+    height: 80%;
+    object-fit: cover; /* Ajuste proporcional */
+}
+
+/* Texto */
+.info-texto {
+    text-align: left; /* Alineación del texto */
+}
+
+.info-texto h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* Tamaño del título ajustado */
+    font-weight: 700; /* Negrita */
+    color: #2d2d2d; /* Color negro/gris oscuro */
+}
+
+.info-texto p {
+    margin: 0;
+    font-size: 0.9em; /* Tamaño del texto ajustado */
+    color: #666; /* Color gris claro */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*REDES SOCIALES*/
+.social-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.social-section h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    max-width: 120px;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-card:hover {
+    transform: scale(1.05);
+}
+
+.social-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.social-card-body {
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.social-card-body h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-card-body p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+
+
+/*ESTRUCTURA DE MENSAJE Y FORMULARIO*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: auto; /* Cambiado a auto para ajustar la altura al contenido */
+}
+
+.left-section {
+    flex: 1;
+    background: linear-gradient(to bottom right, #000000, #404040);
+    color: #ffffff;
+    padding: 90px 40px;
+    box-sizing: border-box;
+    text-align: center; /* Alineación del texto al centro */
+
+}
+
+.left-section h2 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.left-section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.right-section {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex; /* Añadido para organizar los elementos en columna */
+    flex-direction: column; /* Añadido para organizar los elementos en columna */
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+ /* FORMULARIO DE DUDASSSSSSSSSSSSSS */
+ /* Animación al acercar el mouse */
+ .btn-animate {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    font-size: 1rem;
+  }
+
+  .btn-animate:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Botones morados */
+  .btn-purple {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+  }
+
+  .btn-purple:hover {
+    background-color: #7b1fa2;
+  }
+
+  /* Personalización de tamaño de botones */
+  .btn-custom {
+    width: var(--button-width, 300px); /* Ancho del botón */
+    height: var(--button-height, 50px); /* Altura del botón */
+  }
+
+  /* Personalización del text box */
+  .text-box-custom {
+    width: var(--text-box-width, 100%); /* Ancho del campo de texto */
+    max-width: 1200px; /* Limitar ancho máximo */
+    transition: width 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin-left: var(--text-box-margin-left, 30px); /* Posición horizontal inicial */
+  }
+
+  .text-box-custom:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: var(--text-box-focus-width, 100%); /* Ancho al enfoque */
+  }
+
+  /* Ajustes individuales de posición */
+  .btn-enviar {
+    margin-left: var(--btn-enviar-margin-left, 30px); /* Posición horizontal del botón Enviar */
+    margin-top: var(--btn-enviar-margin-top, -13px); /* Posición vertical del botón Enviar */
+  }
+
+  .btn-reset {
+    margin-left: var(--btn-reset-margin-left, 10px); /* Posición horizontal del botón Restablecer */
+    margin-top: var(--btn-reset-margin-top, -13px); /* Posición vertical del botón Restablecer */
+  }
+
+  .separator-custom {
+    margin-left: 10px; /* Espacio a la izquierda del separador */
+    margin-right: 10px; /* Espacio a la derecha del separador */
+  }
+
+  /* Espacio general entre elementos */
+  .hstack {
+    gap: var(--element-gap, 30px); /* Espacio general entre los elementos */
+  }

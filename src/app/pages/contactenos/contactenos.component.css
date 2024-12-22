@@ -1,0 +1,581 @@
+
+/* CSS DE INTRODUCCIÓN */
+/* Estilos generales */
+.blog-section {
+    text-align: left;
+    padding: 20px;
+}
+
+/* Título del blog */
+.blog-title {
+    font-size: 36px; /* Tamaño de la letra */
+    font-weight: bold;
+    color: #232323; /* Color negro grisáceo */
+    font-family: 'Montserrat', sans-serif; /* Fuente exacta similar */
+    margin-bottom: 10px;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.blog-title:hover {
+    transform: scale(1.1); /* Aumenta el tamaño */
+    color: #0000ff; /* Cambia el color del texto al azul */
+}
+
+.blog-title::after {
+    content: '';
+    display: block;
+    width: 600px; /* Longitud de la línea */
+    height: 4px; /* Grosor de la línea */
+    background: linear-gradient(to right, #0000ff, #800080); /* Gradiente azul-morado */
+    margin-left: 400px; /* Parámetro para mover LA LINEA de izquierda a derecha */
+    margin-top: 5px;
+    transition: transform 0.3s ease; /* Transición suave para la línea */
+}
+
+.blog-title:hover::after {
+    transform: scale(1.1); /* Aumenta el tamaño de la línea */
+}
+
+/* Descripción del blog */
+.blog-description {
+    font-size: 24px; /* Tamaño exacto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #0F2C5C; /* Azul profundo */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Estilos para el contenedor principal del GPS */
+.gps-container {
+    display: flex; /* Utiliza flexbox para organizar los elementos en línea */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    height: 500px; /* Altura fija del contenedor */
+    border: 1px solid #ccc; /* Borde sutil de color gris claro */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+}
+
+/* Estilos para la información del GPS, separada por un margen */
+.gps-info {
+    margin-left: 30px; /* Espaciado a la izquierda de 30px */
+}
+
+/* Estilos para el contenedor del mapa */
+.map-container {
+    width: 1500px; /* Ancho fijo de 1500px para el mapa */
+    height: 900px; /* Altura fija de 900px para el mapa */
+    margin-top: 550px; /* Espaciado superior de 550px */
+    margin-left: 80px; /* Espaciado izquierdo de 80px */
+}
+
+
+
+
+
+/* Contenedor DE 4 TARJETAS */
+.beneficios-container {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Espaciado entre bloques */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre los bloques */
+    background-color: #f2fce9; /* Fondo verde claro */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Ocupa toda la página horizontalmente */
+    margin: 0 auto; /* Centrado */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Estilo general de cada bloque */
+.beneficio {
+    display: flex;
+    align-items: center; /* Alinea verticalmente icono y texto */
+    gap: 10px; /* Espacio entre icono y texto */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    flex: 1; /* Bloques ajustables proporcionalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    cursor: pointer; /* Indica interactividad */
+}
+
+.beneficio:hover {
+    transform: translateY(-10px); /* Levanta el bloque */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+/* Iconos */
+.icono {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño reducido del círculo */
+    height: 80px;
+    overflow: hidden; /* Recorte dentro del círculo */
+}
+
+.icono img {
+    width: 80%; /* Imagen más pequeña dentro del círculo */
+    height: 80%;
+    object-fit: cover; /* Recorte proporcional para cubrir el círculo */
+}
+
+/* Texto */
+.texto {
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+.texto h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* Tamaño ajustado */
+    font-weight: 700; /* Negrita */
+    color: #2d2d2d; /* Negro/gris oscuro */
+}
+
+.texto p {
+    margin: 0;
+    font-size: 0.9em; /* Tamaño ajustado */
+    color: #666; /* Gris claro */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la sección de imágenes de películas o animalitos */
+.movie-section {
+    max-width: 1200px; /* Ancho máximo de la sección */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 40px 20px; /* Espaciado interno con padding superior e inferior de 40px y laterales de 20px */
+    background: linear-gradient(to bottom right, #ffffff); /* Fondo con gradiente de blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra alrededor de la sección */
+}
+
+/* Estilos para el encabezado dentro de la sección de imágenes */
+.header {
+    text-align: center; /* Centrado del texto */
+    margin-bottom: 40px; /* Espaciado en la parte inferior */
+}
+
+/* Estilos para el título principal dentro del encabezado */
+.header h1 {
+    font-size: 36px; /* Tamaño de la fuente */
+    margin-bottom: 10px; /* Espaciado inferior */
+    color: #ffc107; /* Color del texto (amarillo dorado) */
+}
+
+/* Estilos para el subtítulo debajo del título principal */
+.header h2 {
+    font-size: 24px; /* Tamaño de la fuente */
+    margin-top: 0; /* Elimina el margen superior */
+}
+
+/* Estilos para la imagen dentro del encabezado */
+.header-image {
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para la imagen dentro del encabezado, asegurando que se ajuste al tamaño */
+.header-image img {
+    max-width: 100%; /* Asegura que la imagen no exceda el 100% del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Sombra sutil alrededor de la imagen */
+}
+
+/* Estilos para el contenedor de las imágenes de animalitos */
+.movie-grid {
+    display: flex; /* Usamos flexbox para alinear las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px; /* Espaciado de 20px entre las imágenes */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para cada tarjeta de película o imagen */
+.movie-card {
+    position: relative; /* Posicionamiento relativo para la superposición de texto */
+    width: 200px; /* Ancho de cada tarjeta */
+    height: 300px; /* Altura de cada tarjeta */
+    background-color: #333; /* Fondo oscuro para la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga de la tarjeta */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Sombra suave alrededor de la tarjeta */
+    transition: transform 0.3s ease-in-out; /* Transición suave al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse por encima de la tarjeta */
+.movie-card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al pasar el mouse */
+}
+
+/* Estilos para la imagen dentro de la tarjeta */
+.movie-card img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block; /* Elimina el espacio en blanco debajo de la imagen */
+    object-fit: cover; /* Hace que la imagen se recorte para cubrir toda la tarjeta sin distorsionarse */
+}
+
+/* Estilos para la superposición de texto dentro de la tarjeta */
+.card-overlay {
+    position: absolute; /* Posicionamiento absoluto para que se superponga sobre la imagen */
+    bottom: 0; /* Coloca la superposición en la parte inferior de la tarjeta */
+    left: 0; /* Coloca la superposición en el lado izquierdo de la tarjeta */
+    width: 100%; /* Asegura que la superposición ocupe todo el ancho de la tarjeta */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente para la superposición */
+    padding: 10px; /* Espaciado interno de 10px */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño de la superposición */
+    opacity: 1; /* La superposición siempre es visible */
+    text-align: center; /* Centra el texto dentro de la superposición */
+}
+
+/* Estilos para el título dentro de la superposición de texto */
+.card-overlay .card-title {
+    font-size: 18px; /* Tamaño de la fuente del título */
+    color: #f2f2f2; /* Color blanco para el título */
+    margin-bottom: 5px; /* Espaciado inferior */
+    text-align: center; /* Centra el título */
+}
+
+/* Estilos para la descripción dentro de la superposición de texto */
+.card-overlay .card-description {
+    font-size: 14px; /* Tamaño de la fuente de la descripción */
+    color: #f2f2f2; /* Color blanco para la descripción */
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* FORMULARIO DE DUDASSSSSSSSSSSSSS */
+ /* Animación al acercar el mouse */
+ .btn-animate {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    font-size: 1rem;
+  }
+
+  .btn-animate:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Botones morados */
+  .btn-purple {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+  }
+
+  .btn-purple:hover {
+    background-color: #7b1fa2;
+  }
+
+  /* Personalización de tamaño de botones */
+  .btn-custom {
+    width: var(--button-width, 300px); /* Ancho del botón */
+    height: var(--button-height, 50px); /* Altura del botón */
+  }
+
+  /* Personalización del text box */
+  .text-box-custom {
+    width: var(--text-box-width, 100%); /* Ancho del campo de texto */
+    max-width: 1200px; /* Limitar ancho máximo */
+    transition: width 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin-left: var(--text-box-margin-left, 30px); /* Posición horizontal inicial */
+  }
+
+  .text-box-custom:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: var(--text-box-focus-width, 100%); /* Ancho al enfoque */
+  }
+
+  /* Ajustes individuales de posición */
+  .btn-enviar {
+    margin-left: var(--btn-enviar-margin-left, 30px); /* Posición horizontal del botón Enviar */
+    margin-top: var(--btn-enviar-margin-top, -13px); /* Posición vertical del botón Enviar */
+  }
+
+  .btn-reset {
+    margin-left: var(--btn-reset-margin-left, 10px); /* Posición horizontal del botón Restablecer */
+    margin-top: var(--btn-reset-margin-top, -13px); /* Posición vertical del botón Restablecer */
+  }
+
+  .separator-custom {
+    margin-left: 10px; /* Espacio a la izquierda del separador */
+    margin-right: 10px; /* Espacio a la derecha del separador */
+  }
+
+  /* Espacio general entre elementos */
+  .hstack {
+    gap: var(--element-gap, 30px); /* Espacio general entre los elementos */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para la tarjeta */
+.card {
+    background-color: #f3e5f5; /* Fondo suave morado */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 20px;
+    display: flex; /* Usamos flexbox para colocar imagen y texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease; /* Animación de transición */
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+    transform: translateY(-10px); /* Elevación de la tarjeta */
+}
+
+.card-header {
+    background-color: #6a1b9a; /* Color morado oscuro */
+    height: 30px; /* Altura de la franja */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados arriba */
+}
+
+.card-body {
+    padding: 20px; /* Espaciado dentro del cuerpo de la tarjeta */
+    color: #4a148c; /* Color de texto morado oscuro */
+    width: 100%; /* Toma el 100% del ancho de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el texto dentro de su área */
+    text-align: justify; /* Justifica el texto */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Título de la cita, tamaño mayor */
+    color: #6a1b9a; /* Color morado */
+    text-align: center; /* Centramos el título */
+    font-weight: bold;
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+.blockquote-footer {
+    font-size: 0.9rem; /* Tamaño más pequeño para el pie de la cita */
+    color: #6a1b9a; /* Color morado oscuro */
+    margin-top: 20px; /* Espacio más grande entre la cita y el autor */
+    text-align: right; /* Alineamos a la derecha el autor */
+}
+
+/* Estilo para la imagen del autor */
+.author-img {
+    width: 100%; /* La imagen ocupa el 100% del ancho de su contenedor */
+    height: 100%; /* La imagen ocupa toda la altura de la tarjeta */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Animación para la imagen */
+}
+
+/* Efecto hover para la imagen */
+.card-right:hover .author-img {
+    transform: scale(1.05); /* Aumento de la imagen al pasar el mouse */
+}
+
+/* Contenedor de la imagen y el texto */
+.card-content {
+    display: flex;
+    width: 100%; /* Toma el 100% del ancho disponible */
+}
+
+.card-left {
+    width: 115%; /* El texto ocupa el 60% */
+    padding-left: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.card-right {
+    width: 40%; /* La imagen ocupa el 40% */
+    height: 100%; /* La imagen ocupa toda la altura */
+}
+
+
+
+
+
+
+
+/* Contenedor DE LOS DATOS FINALES */
+.informacion-container {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Espaciado uniforme entre bloques */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre bloques */
+    background-color: #f2fce9; /* Fondo verde claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%; /* Ocupa toda la fila horizontal */
+    margin: 0 auto; /* Centra el contenedor */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Bloques individuales */
+.info-bloque {
+    display: flex;
+    align-items: center; /* Alineación vertical centrada */
+    gap: 10px; /* Espacio entre icono y texto */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    flex: 1; /* Bloques ajustables proporcionalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    cursor: pointer; /* Indica interactividad */
+}
+
+.info-bloque:hover {
+    transform: translateY(-10px); /* Efecto de levantamiento */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Iconos */
+.info-icono {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño del círculo */
+    height: 80px;
+    overflow: hidden; /* Recorte dentro del círculo */
+}
+
+.info-icono img {
+    width: 80%; /* Imagen más pequeña */
+    height: 80%;
+    object-fit: cover; /* Ajuste proporcional */
+}
+
+/* Texto */
+.info-texto {
+    text-align: left; /* Alineación del texto */
+}
+
+.info-texto h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* Tamaño del título ajustado */
+    font-weight: 700; /* Negrita */
+    color: #2d2d2d; /* Color negro/gris oscuro */
+}
+
+.info-texto p {
+    margin: 0;
+    font-size: 0.9em; /* Tamaño del texto ajustado */
+    color: #666; /* Color gris claro */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*REDES SOCIALES*/
+
+/* Estilos generales para la sección de redes sociales */
+.social-section {
+    background-color: #ffffff; /* Fondo blanco para la sección */
+    padding: 40px 20px; /* Espaciado alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra suave alrededor de la sección */
+    max-width: 1500px; /* Ancho máximo de la sección */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+}
+
+/* Estilos para el título de la sección de redes sociales */
+.social-section h2 {
+    text-align: center; /* Centra el texto */
+    font-family: Arial, sans-serif; /* Fuente simple y legible */
+    font-weight: bold; /* Negrita para el título */
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+/* Estilos para la cuadrícula de tarjetas de redes sociales */
+.social-cards {
+    display: flex; /* Utiliza Flexbox para organizar las tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten a múltiples filas */
+}
+
+/* Estilos para cada tarjeta de red social */
+.social-card {
+    background-color: #fff; /* Fondo blanco para la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave alrededor de cada tarjeta */
+    overflow: hidden; /* Oculta cualquier contenido que sobrepase los límites de la tarjeta */
+    margin: 10px; /* Espaciado entre las tarjetas */
+    max-width: 120px; /* Ancho máximo de cada tarjeta */
+    transition: transform 0.3s ease-in-out; /* Efecto suave de transformación al pasar el mouse */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Mantiene el color del texto igual que el del contenedor */
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta */
+.social-card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta */
+}
+
+/* Estilos para la imagen dentro de cada tarjeta */
+.social-card img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Hace que la imagen sea un bloque */
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.social-card-body {
+    padding: 10px; /* Espaciado dentro de la tarjeta */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+    font-family: Arial, sans-serif; /* Fuente simple y legible */
+}
+
+/* Estilos para el título dentro del cuerpo de la tarjeta */
+.social-card-body h3 {
+    margin-top: 0; /* Elimina el margen superior */
+    font-size: 18px; /* Tamaño de letra para el título */
+    font-weight: bold; /* Negrita para el título */
+}
+
+/* Estilos para la descripción dentro del cuerpo de la tarjeta */
+.social-card-body p {
+    margin-bottom: 0; /* Elimina el margen inferior */
+    font-size: 14px; /* Tamaño de letra para la descripción */
+}

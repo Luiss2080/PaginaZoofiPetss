@@ -1,0 +1,631 @@
+.logoPequeño {
+    width: 50px; /* Ajusta esto según el tamaño deseado para tu logo */
+
+    height: auto; /* la altura se ajustará automáticamente logo.*/
+
+    vertical-align: middle; /* Alinea el logo verticalmente con el texto */
+}
+
+
+
+
+
+/* Estilo general de las tarjetas */
+.card {
+    width: 26rem; /* Define el ancho de la tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Aplica una transición suave en los efectos de transformaciones y sombra */
+  }
+  
+  /* Efectos cuando el cursor pasa sobre la tarjeta */
+  .card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta 10px hacia arriba */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Añade una sombra para simular un efecto de profundidad */
+  }
+  
+  /* Estilo para las imágenes dentro de las tarjetas */
+  .card img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible de la tarjeta */
+    height: 220px; /* Establece la altura fija de las imágenes a 220px */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio sin deformarla, recortando las partes sobrantes si es necesario */
+  }
+  
+  /* Estilo para el texto principal en las tarjetas */
+  .card-text {
+    font-weight: bold; /* Aplica negrita al texto */
+    font-size: 1.2rem; /* Establece el tamaño de la fuente a 1.2rem (mayor que el tamaño estándar) */
+  }
+  
+  /* Estilo para la descripción bajo el texto principal */
+  .card-description {
+    font-size: 1rem; /* Establece el tamaño de la fuente a 1rem (tamaño de fuente estándar) */
+    color: #555; /* Asigna un color gris suave al texto para una mejor legibilidad */
+    margin-bottom: 1rem; /* Añade un espacio en la parte inferior del texto para separar el contenido */
+  }
+  
+  /* Estilo para los botones morados */
+  .btn-purple {
+    background-color: #6a1b9a; /* Define un fondo morado para el botón */
+    color: white; /* Establece el color del texto del botón en blanco */
+    border: none; /* Elimina los bordes del botón */
+    padding: 0.8rem 1.2rem; /* Añade un relleno dentro del botón para hacerlo más grande y fácil de presionar */
+    font-size: 1rem; /* Define el tamaño de la fuente en el botón */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Aplica una transición suave a las propiedades al interactuar con el botón */
+  }
+  
+  /* Efectos cuando el cursor pasa sobre el botón */
+  .btn-purple:hover {
+    background-color: #7b1fa2; /* Cambia el color de fondo a un tono morado más oscuro cuando el cursor pasa por encima */
+    transform: translateY(-3px); /* Eleva el botón ligeramente hacia arriba */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Añade una sombra para darle profundidad al botón */
+  }
+  
+  /* Estilo para centrar las tarjetas dentro del contenedor */
+  .d-flex {
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: center; /* Centra las tarjetas verticalmente */
+  }
+  
+  /* Sombra personalizada para las tarjetas */
+  .shadow-custom {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aplica una sombra suave y difusa a las tarjetas para un efecto de profundidad */
+  }
+  
+  /* Estilo para el contenedor de la barra de rango (input de tipo range) */
+  .custom-container {
+    display: flex; /* Utiliza un diseño flexible para alinear los elementos */
+    flex-direction: column; /* Apila los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 10px; /* Espacio entre los elementos */
+    margin: 20px 0; /* Añade espacio arriba y abajo del contenedor */
+  }
+  
+  /* Estilo para la barra de rango */
+  .form-range {
+    width: 80%; /* Hace que la barra de rango ocupe el 80% del ancho disponible */
+    margin: 10px 0; /* Añade espacio arriba y abajo de la barra */
+  }
+  
+  /* Estilo para el botón de enviar */
+  .submit-btn {
+    background-color: #6a1b9a; /* Define un fondo morado para el botón */
+    color: white; /* Establece el texto del botón en blanco */
+    padding: 0.8rem 1.2rem; /* Añade relleno al botón */
+    font-size: 1rem; /* Establece el tamaño de la fuente en el botón */
+    border: none; /* Elimina los bordes del botón */
+    border-radius: 5px; /* Añade bordes redondeados */
+    cursor: pointer; /* Cambia el cursor cuando pasa por encima para indicar que es clickeable */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el color de fondo y el movimiento */
+  }
+  
+  /* Efectos cuando el cursor pasa sobre el botón de enviar */
+  .submit-btn:hover {
+    background-color: #7b1fa2; /* Cambia el fondo a un tono más oscuro cuando el cursor pasa sobre el botón */
+    transform: translateY(-3px); /* Eleva ligeramente el botón */
+  }
+  
+
+
+
+
+
+/* CSS DE INTRODUCCIÓN */
+/* Estilos generales */
+.blog-section {
+    text-align: left;
+    padding: 20px;
+}
+
+/* Título del blog */
+.blog-title {
+    font-size: 36px; /* Tamaño de la letra */
+    font-weight: bold;
+    color: #232323; /* Color negro grisáceo */
+    font-family: 'Montserrat', sans-serif; /* Fuente exacta similar */
+    margin-bottom: 10px;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.blog-title:hover {
+    transform: scale(1.1); /* Aumenta el tamaño */
+    color: #0000ff; /* Cambia el color del texto al azul */
+}
+
+.blog-title::after {
+    content: '';
+    display: block;
+    width: 550px; /* Longitud de la línea */
+    height: 4px; /* Grosor de la línea */
+    background: linear-gradient(to right, #0000ff, #800080); /* Gradiente azul-morado */
+    margin-left: 450px; /* Parámetro para mover LA LINEA de izquierda a derecha */
+    margin-top: 5px;
+    transition: transform 0.3s ease; /* Transición suave para la línea */
+}
+
+.blog-title:hover::after {
+    transform: scale(1.1); /* Aumenta el tamaño de la línea */
+}
+
+/* Descripción del blog */
+.blog-description {
+    font-size: 24px; /* Tamaño exacto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #0F2C5C; /* Azul profundo */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+ /* ENLACES de los videos */
+ /* Estilos para ajustar el tamaño de los videos */
+ .tab-pane iframe {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 550px; /* Ajusta la altura según sea necesario */
+  }
+
+  /* Estilos para la imagen */
+  .image-container {
+    text-align: center; /* Centrar la imagen */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 20px; /* Espaciado inferior */
+  }
+
+  .image-container img {
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* Mantener proporciones */
+    cursor: pointer; /* Indicar que se puede interactuar */
+    transition: transform 0.3s ease; /* Animación de transformación */
+  }
+
+  .image-container img:hover {
+    transform: scale(1.05); /* Aumenta la imagen un poco al pasar el mouse */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el body y el contenedor principal que centra todo */
+body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+    background-color: #f7f7f7; /* Color de fondo suave para la página */
+    font-family: 'Roboto', sans-serif; /* Cambiar la fuente de la página */
+    display: flex; /* Habilita el modelo de diseño Flexbox */
+    flex-direction: column; /* Establece el diseño en columna */
+    overflow: hidden; /* Para evitar barras de desplazamiento no deseadas */
+  }
+  
+  /* Contenedor de la tarjeta que se va a mover de izquierda a derecha */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 20px;
+  }
+  
+  /* Estilo para el contenedor del rango */
+  .custom-container {
+    border: 2px solid rgba(128, 0, 128, 0.2); /* Borde morado más transparente */
+    padding: 30px;
+    display: inline-block; /* Hace que el contenedor tenga un tamaño ajustado al contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Animación suave cuando se levanta */
+    width: 100%; /* Permite que el contenedor ocupe el 100% del ancho disponible */
+    max-width: 900px; /* Hace que la tarjeta sea aún más ancha */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
+    margin-top: 30px; /* Asegura que tenga un pequeño margen en la parte superior */
+    position: relative; /* Permite mover la tarjeta horizontalmente */
+    left: 300px; /* Mueve la tarjeta 50px hacia la derecha */
+  }
+  
+  /* Efecto de levitar cuando el mouse pasa por encima del contenedor */
+  .custom-container:hover {
+    transform: translateY(-10px); /* Levanta el contenedor 10px al pasar el mouse */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar el efecto de "flotante" */
+  }
+  
+  /* Estilo de la etiqueta */
+  .form-label {
+    font-weight: bold;
+    color: purple; /* Color morado para el texto */
+    display: block; /* Asegura que la etiqueta ocupe toda la línea */
+    margin-bottom: 10px; /* Añade espacio entre la etiqueta y la barra de rango */
+    font-size: 24px; /* Cambiar tamaño de fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #0F2C5C; /* Azul profundo */
+    font-family: 'Roboto', sans-serif; /* Cambiar la fuente de la etiqueta */
+    text-align: center; /* Centra el texto */
+  }
+  
+  /* Estilo del input de tipo rango (barra deslizante) */
+  .form-range {
+    width: 100%; /* Hace que la barra ocupe todo el ancho disponible */
+    margin-top: 10px; /* Espacio entre la etiqueta y la barra */
+    background: rgba(128, 0, 128, 0.3); /* Fondo de la barra en morado transparente */
+    height: 8px; /* Grosor de la barra */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none; /* Quitar el borde de enfoque por defecto */
+  }
+  
+  /* Estilo del marcador (thumb) de la barra de rango */
+  .form-range::-webkit-slider-thumb {
+    background-color: purple; /* El color del marcador (thumb) será morado */
+    border-radius: 50%; /* Hacer que el marcador tenga forma redonda */
+    border: 2px solid purple; /* Borde morado alrededor del marcador */
+    width: 20px; /* Ancho del marcador */
+    height: 20px; /* Altura del marcador */
+    cursor: pointer; /* Cambiar el cursor a un puntero cuando se pase por encima */
+  }
+  
+  /* Estilo del botón de Enviar */
+  .submit-btn {
+    background-color: purple; /* Color morado para el botón */
+    color: white; /* Color de texto blanco */
+    border: none;
+    padding: 10px 20px; /* Espaciado del botón */
+    margin-top: 15px; /* Espacio entre la barra de rango y el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    width: 100%; /* Hace que el botón ocupe el 100% del ancho disponible */
+    max-width: 200px; /* Establece un máximo para el ancho del botón */
+    display: block; /* Asegura que el botón ocupe toda la fila */
+    margin-left: auto; /* Centra el botón en la fila */
+    margin-right: auto;
+    text-align: center; /* Centra el texto del botón */
+  }
+  
+  /* Efecto hover para el botón */
+  .submit-btn:hover {
+    background-color: darkviolet; /* Cambio de color cuando el mouse pasa por encima */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+/* CONTENEDOR DE 4 TARJETAS DE INFORMACION */
+.beneficios-container {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Espaciado entre bloques */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre los bloques */
+    background-color: #f2fce9; /* Fondo verde claro */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Ocupa toda la página horizontalmente */
+    margin: 0 auto; /* Centrado */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Estilo general de cada bloque */
+.beneficio {
+    display: flex;
+    align-items: center; /* Alinea verticalmente icono y texto */
+    gap: 10px; /* Espacio entre icono y texto */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    flex: 1; /* Bloques ajustables proporcionalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    cursor: pointer; /* Indica interactividad */
+}
+
+.beneficio:hover {
+    transform: translateY(-10px); /* Levanta el bloque */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+/* Iconos */
+.icono {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño reducido del círculo */
+    height: 80px;
+    overflow: hidden; /* Recorte dentro del círculo */
+}
+
+.icono img {
+    width: 80%; /* Imagen más pequeña dentro del círculo */
+    height: 80%;
+    object-fit: cover; /* Recorte proporcional para cubrir el círculo */
+}
+
+/* Texto */
+.texto {
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+.texto h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* Tamaño ajustado */
+    font-weight: 700; /* Negrita */
+    color: #2d2d2d; /* Negro/gris oscuro */
+}
+
+.texto p {
+    margin: 0;
+    font-size: 0.9em; /* Tamaño ajustado */
+    color: #666; /* Gris claro */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTENEDOR PARA LA SECCION DE AGRADECIMIENTOS */
+
+.movie-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom right, #ffffff);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffc107;
+}
+
+.header h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.header-image {
+    margin-top: 20px;
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Estilos para las imagenes de animalitos */
+.movie-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos para cada tarjeta */
+.movie-card {
+    position: relative;
+    width: 200px; /* Ancho de cada tarjeta */
+    height: 300px; /* Altura de cada tarjeta */
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out; /* Animación de transformación */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Estilos para la superposición de texto (card-overlay) */
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 1; /* Mostrar siempre la superposición */
+    text-align: center; /* Centrar el contenido */
+}
+
+.card-overlay .card-title {
+    font-size: 18px;
+    color: #f2f2f2; /* Color del título */
+    margin-bottom: 5px;
+    text-align: center; /* Centrar el título */
+}
+/* Estilos para la descripción dentro de la superposición de texto (card-overlay) */
+.card-overlay .card-description {
+    font-size: 14px;
+    color: #f2f2f2; /* Cambio de color para la descripción */
+}
+
+
+
+
+
+
+
+
+
+
+/* Contenedor DE LOS DATOS FINALES */
+.informacion-container {
+    display: flex; /* Diseño en fila */
+    justify-content: space-between; /* Espaciado uniforme entre bloques */
+    align-items: center; /* Alineación vertical */
+    gap: 10px; /* Espacio entre bloques */
+    background-color: #f2fce9; /* Fondo verde claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%; /* Ocupa toda la fila horizontal */
+    margin: 0 auto; /* Centra el contenedor */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Bloques individuales */
+.info-bloque {
+    display: flex;
+    align-items: center; /* Alineación vertical centrada */
+    gap: 10px; /* Espacio entre icono y texto */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    flex: 1; /* Bloques ajustables proporcionalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    cursor: pointer; /* Indica interactividad */
+}
+
+.info-bloque:hover {
+    transform: translateY(-10px); /* Efecto de levantamiento */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Iconos */
+.info-icono {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 50%; /* Forma circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Tamaño del círculo */
+    height: 80px;
+    overflow: hidden; /* Recorte dentro del círculo */
+}
+
+.info-icono img {
+    width: 80%; /* Imagen más pequeña */
+    height: 80%;
+    object-fit: cover; /* Ajuste proporcional */
+}
+
+/* Texto */
+.info-texto {
+    text-align: left; /* Alineación del texto */
+}
+
+.info-texto h3 {
+    margin: 0 0 5px;
+    font-size: 1em; /* Tamaño del título ajustado */
+    font-weight: 700; /* Negrita */
+    color: #2d2d2d; /* Color negro/gris oscuro */
+}
+
+.info-texto p {
+    margin: 0;
+    font-size: 0.9em; /* Tamaño del texto ajustado */
+    color: #666; /* Color gris claro */
+}
+
+
+
+
+
+
+
+
+/*REDES SOCIALES*/
+.social-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.social-section h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    max-width: 120px;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-card:hover {
+    transform: scale(1.05);
+}
+
+.social-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.social-card-body {
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.social-card-body h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-card-body p {
+    margin-bottom: 0;
+    font-size: 14px;
+}

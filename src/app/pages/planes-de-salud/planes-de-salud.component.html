@@ -1,0 +1,545 @@
+<!-- Estructura para introducir a la presentación -->
+<div style="height: 80px;"></div>
+
+<section class="blog-section">
+  <!-- Título principal de la sección -->
+  <h2 class="blog-title" style="text-align: center;">¿En qué etapa se encuentra tu gatito?</h2>
+  <!-- Descripción introductoria de la sección -->
+  <p class="blog-description" style="text-align: center;">
+    Explora las diferentes etapas de vida de los gatos y aprende más sobre sus características y cuidados. Haz clic en los videos para conocer más.
+  </p>
+
+  <!-- Contenedor principal de las tarjetas de los gatos -->
+  <div class="container my-4">
+    <div class="d-flex flex-wrap justify-content-center">
+
+      <!-- Tarjeta para Gatitos -->
+      <div class="card mx-2 mb-3 shadow-custom" style="width: 18rem;">
+        <div class="card-body text-center">
+          <!-- Descripción de la etapa - Gatitos -->
+          <p class="card-text"><strong>-Gatitos-</strong></p>
+          <p class="card-description">Pequeños y adorables, los gatitos conquistan corazones con su energía inagotable y su ternura.</p>
+          <!-- Imagen de los gatitos -->
+          <img src="gatitos.jpeg" alt="Gatito" class="img-fluid" style="border-radius: 10px;">
+          <!-- Enlace al video relacionado con gatitos -->
+          <a href="https://www.youtube.com/embed/J3NAYXXyBVI" class="btn btn-purple mt-2" target="_blank">MIRA ESTE VIDEO</a>
+        </div>
+      </div>
+
+      <!-- Tarjeta para Gatos Adultos -->
+      <div class="card mx-2 mb-3 shadow-custom" style="width: 18rem;">
+        <div class="card-body text-center">
+          <!-- Descripción de la etapa - Gatos Adultos -->
+          <p class="card-text"><strong>-Gatos Adultos-</strong></p>
+          <p class="card-description">Elegantes e independientes, los gatos adultos ofrecen afecto y tienen personalidades únicas.</p>
+          <!-- Imagen de los gatos adultos -->
+          <img src="gatosAdultos.jpeg" alt="Gato adulto" class="img-fluid" style="border-radius: 10px;">
+          <!-- Enlace al video relacionado con gatos adultos -->
+          <a href="https://www.youtube.com/embed/FVUQfoCAUGk" class="btn btn-purple mt-2" target="_blank">MIRA ESTE VIDEO</a>
+        </div>
+      </div>
+
+      <!-- Tarjeta para Gatos Ancianos -->
+      <div class="card mx-2 mb-3 shadow-custom" style="width: 18rem;">
+        <div class="card-body text-center">
+          <!-- Descripción de la etapa - Gatos Ancianos -->
+          <p class="card-text"><strong>-Gatos Ancianos-</strong></p>
+          <p class="card-description">Tiernos y tranquilos, los gatos ancianos siguen siendo compañeros leales en su etapa dorada.</p>
+          <!-- Imagen de los gatos ancianos -->
+          <img src="gatosviejos.jpg" alt="Gato senior" class="img-fluid" style="border-radius: 10px;">
+          <!-- Enlace al video relacionado con gatos ancianos -->
+          <a href="https://www.youtube.com/embed/v00ci8BvBIE" class="btn btn-purple mt-2" target="_blank">MIRA ESTE VIDEO</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    
+
+
+
+
+
+<body>
+  <div class="container my-1">
+    
+    <!-- ESTRUCTURA DEL FONDO DE LOS ANIMALITOS ANIMADOS -->
+    <div class="header">
+      <!-- Título principal de la sección de planes de cuidado -->
+      <h1>NUESTROS PLANES DE CUIDADO PARA TU GATITO!</h1>
+    </div>
+  </div>
+
+  <!-- Fila de contenido con dos columnas: una para la lista de planes y otra para los videos -->
+  <div class="row">
+    <!-- Columna para los planes de cuidado (Izquierda) -->
+    <div class="col-4">
+      <!-- Lista de los planes de cuidado, con un sistema de pestañas -->
+      <div class="list-group" id="list-tab" role="tablist">
+        <!-- Plan de cuidado para Gatitos -->
+        <a class="list-group-item list-group-item-action active" id="list-gatitos-list" data-bs-toggle="list" href="#list-gatitos" role="tab" aria-controls="list-gatitos">-Plan de Cuidado Para "Gatitos"-</a>
+        <!-- Plan de cuidado para Gatos Adultos -->
+        <a class="list-group-item list-group-item-action" id="list-adultos-list" data-bs-toggle="list" href="#list-adultos" role="tab" aria-controls="list-adultos">-Plan de Cuidado Para "Gatos Adultos"-</a>
+        <!-- Plan de cuidado para Gatos Ancianos -->
+        <a class="list-group-item list-group-item-action" id="list-senior-list" data-bs-toggle="list" href="#list-senior" role="tab" aria-controls="list-senior">-Plan de Cuidado Para "Gatos Ancianos"-</a>
+      </div>
+      
+      <!-- Contenedor de imagen a la izquierda -->
+      <div class="image-container">
+        <!-- Imagen ilustrativa relacionada con el cuidado de los gatos -->
+        <img src="consejoGato.jpeg" alt="Imagen de Gatitos">
+      </div>
+    </div>
+
+    <!-- Columna para los videos relacionados con cada plan de cuidado (Derecha) -->
+    <div class="col-8">
+      <div class="tab-content" id="nav-tabContent">
+        
+        <!-- Contenido del Plan de Cuidado para Gatitos -->
+        <div class="tab-pane fade show active" id="list-gatitos" role="tabpanel" aria-labelledby="list-gatitos-list">
+          <div class="ratio ratio-16x9">
+            <!-- Video de YouTube para el cuidado de gatitos -->
+            <iframe src="https://www.youtube.com/embed/J3NAYXXyBVI" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+        
+        <!-- Contenido del Plan de Cuidado para Gatos Adultos -->
+        <div class="tab-pane fade" id="list-adultos" role="tabpanel" aria-labelledby="list-adultos-list">
+          <div class="ratio ratio-16x9">
+            <!-- Video de YouTube para el cuidado de gatos adultos -->
+            <iframe src="https://www.youtube.com/embed/FVUQfoCAUGk" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+        
+        <!-- Contenido del Plan de Cuidado para Gatos Ancianos -->
+        <div class="tab-pane fade" id="list-senior" role="tabpanel" aria-labelledby="list-senior-list">
+          <div class="ratio ratio-16x9">
+            <!-- Video de YouTube para el cuidado de gatos ancianos -->
+            <iframe src="https://www.youtube.com/embed/v00ci8BvBIE" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- SEPARACION DE SECCIÓN DE PLANES DE SALUD -->
+<div style="height: 20px;"></div>
+
+<!-- Sección que cierra los planes de salud para gatos -->
+<section class="blog-section">
+  <h2 class="blog-title" style="text-align: center;">LA SALUD DE TU GATITO, NUESTRO COMPROMISO</h2>
+  
+  <!-- Descripción del compromiso de la tienda con la salud de los gatos -->
+  <p class="blog-description" style="text-align: center;">
+    En <strong>ZooFiPets</strong>, ofrecemos planes de salud especialmente diseñados para cada etapa de la vida de tu gato. 
+    <br>Desde los traviesos gatitos hasta los felinos adultos, garantizamos su bienestar con atención médica de calidad. 
+    <br><strong>¡Dale a tu gato el cuidado que se merece con nuestros planes de salud pensados para su felicidad y salud!</strong>
+  </p>
+</section>
+
+
+
+
+
+<!-- Sección de Calificación de Satisfacción -->
+<div class="custom-container">
+  <!-- Etiqueta que describe la barra de rango -->
+  <label for="customRange1" class="form-label">-Indica tu nivel de satisfacción con esta sección-</label>
+  
+  <!-- Barra de rango que permite al usuario calificar su satisfacción (de 0 a 100) -->
+  <input type="range" class="form-range" id="customRange1" min="0" max="100" step="1">
+  
+  <!-- Botón para enviar la calificación, centrado -->
+  <button type="button" class="submit-btn">Enviar mi calificación</button>
+</div>
+
+<!-- Sección de Etapas de Vida de los Perritos -->
+<div class="container my-2">
+  <!-- Título principal que indica en qué etapa de vida está el perro -->
+  <h2 class="blog-title" style="text-align: center;">¿En qué etapa se encuentra tu perrito?</h2>
+  
+  <div class="d-flex justify-content-center">
+    <!-- Tarjeta para Cachorros -->
+    <div class="card mx-2 mb-3 shadow-custom">
+      <div class="card-body text-center">
+        <!-- Descripción de la etapa de cachorro -->
+        <p class="card-text">-Cachorros-</p>
+        <p class="card-description">Pequeños y curiosos, los cachorros exploran el mundo con entusiasmo, aprendiendo y creciendo.</p>
+        
+        <!-- Imagen de un cachorro -->
+        <img src="cachorros.jpeg" alt="Cachorro" class="img-fluid">
+        
+        <!-- Enlace a un video sobre cachorros -->
+        <a href="https://youtu.be/LZ9AKsUCcTI?si=sNQrKBj0EvMMyI9H" class="btn btn-purple mt-2" target="_blank">MIRA ESTE VIDEO</a>
+      </div>
+    </div>
+    
+    <!-- Tarjeta para Perros Adultos -->
+    <div class="card mx-2 mb-3 shadow-custom">
+      <div class="card-body text-center">
+        <!-- Descripción de la etapa de perro adulto -->
+        <p class="card-text">-Perros Adultos-</p>
+        <p class="card-description">Los perros adultos son leales y equilibrados, ofreciendo afecto y tranquilidad a sus familias.</p>
+        
+        <!-- Imagen de un perro adulto -->
+        <img src="perrosAdultos.jpg" alt="Perro adulto" class="img-fluid">
+        
+        <!-- Enlace a un video sobre perros adultos -->
+        <a href="https://youtu.be/7HAZ0V3AEcU?si=T2f-4Vg5QQ7n6SNw" class="btn btn-purple mt-2" target="_blank">MIRA ESTE VIDEO</a>
+      </div>
+    </div>
+    
+    <!-- Tarjeta para Perros Ancianos -->
+    <div class="card mx-2 mb-3 shadow-custom">
+      <div class="card-body text-center">
+        <!-- Descripción de la etapa de perro anciano -->
+        <p class="card-text">-Perros Ancianos-</p>
+        <p class="card-description">Los perros ancianos disfrutan de una vida tranquila, brindando amor y compañía con su sabiduría.</p>
+        
+        <!-- Imagen de un perro anciano -->
+        <img src="perroadulto.jpg" alt="Perro anciano" class="img-fluid">
+        
+        <!-- Enlace a un video sobre perros ancianos -->
+        <a href="https://youtu.be/T9cBRQjfrCg?si=SfRu_QQfxaxPG6La" class="btn btn-purple mt-2" target="_blank">MIRA ESTE VIDEO</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sección de Planes de Salud para Perros -->
+<body>
+  <div class="container mt-5">
+    <!-- Título de la sección -->
+    <div class="header">
+      <h1>NUESTROS PLANES DE SALUD PARA TU PERRITO!</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Columna de la izquierda para las opciones de planes -->
+    <div class="col-4">
+      <div class="list-group" id="list-tab" role="tablist">
+        <!-- Enlaces a los diferentes planes de cuidado según la etapa -->
+        <a class="list-group-item list-group-item-action active" id="list-gatitos-list" data-bs-toggle="list" href="#list-gatitos" role="tab" aria-controls="list-gatitos">Plan de cuidado Para "cachorros"</a>
+        <a class="list-group-item list-group-item-action" id="list-adultos-list" data-bs-toggle="list" href="#list-adultos" role="tab" aria-controls="list-adultos">Plan de cuidado Para "Perros Adultos"</a>
+        <a class="list-group-item list-group-item-action" id="list-senior-list" data-bs-toggle="list" href="#list-senior" role="tab" aria-controls="list-senior">Plan de cuidado Para "Perros Ancianos"</a>
+      </div>
+      
+      <!-- Contenedor para imagen de consejo -->
+      <div class="image-container">
+        <img src="consejoPerro.jpeg" alt="Imagen de Perros">
+      </div>
+    </div>
+
+    <!-- Columna de la derecha que muestra los videos de los planes -->
+    <div class="col-8">
+      <div class="tab-content" id="nav-tabContent">
+        <!-- Plan de cuidado para Cachorros -->
+        <div class="tab-pane fade show active" id="list-gatitos" role="tabpanel" aria-labelledby="list-gatitos-list">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/LZ9AKsUCcTI" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+        
+        <!-- Plan de cuidado para Perros Adultos -->
+        <div class="tab-pane fade" id="list-adultos" role="tabpanel" aria-labelledby="list-adultos-list">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/7HAZ0V3AEcU" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+        
+        <!-- Plan de cuidado para Perros Ancianos -->
+        <div class="tab-pane fade" id="list-senior" role="tabpanel" aria-labelledby="list-senior-list">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/T9cBRQjfrCg" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+
+
+
+
+
+
+<!-- SEPARACIÓN DE SECCIÓN DE PLANES DE SALUD -->
+<div style="height: 20px;"></div>
+
+<!-- CIERRE DE PLANES DE SALUD -->
+<section class="blog-section">
+    <!-- Título principal de la sección de planes de salud -->
+    <h2 class="blog-title" style="text-align: center;">LA SALUD DE TU PERRITO ES NUESTRA PRIORIDAD</h2>
+
+    <!-- Descripción breve sobre los planes de salud ofrecidos para los perros -->
+    <p class="blog-description" style="text-align: center;">
+        En <strong>ZooFiPets</strong>, ofrecemos planes de salud diseñados para cuidar a tu perro en todas las etapas de su vida. 
+        <br>Desde cachorros hasta perros mayores, tenemos opciones para garantizar su bienestar y mantenerlos saludables y felices. 
+        <br><strong>¡Protege a tu mejor amigo con los mejores planes de salud para su tranquilidad y la tuya!</strong>
+    </p>
+</section>
+
+
+
+
+
+
+
+<!-- Contenedor principal que envuelve el rango de calificación y la etiqueta de instrucción -->
+<div class="custom-container">
+  <!-- Etiqueta que indica la acción de la barra de rango, pidiendo la calificación del usuario -->
+  <label for="customRange1" class="form-label">-Indica tu nivel de satisfacción con esta sección-</label> 
+  
+  <!-- Barra de rango (input) para que el usuario seleccione un nivel de satisfacción del 0 al 100 -->
+  <input type="range" class="form-range" id="customRange1" min="0" max="100" step="1">
+  
+  <!-- Botón centrado para enviar la calificación seleccionada por el usuario -->
+  <button type="button" class="submit-btn">Enviar mi calificación</button>
+</div>
+
+
+
+
+
+
+ <!-- Estructura para introducir a la presentacion -->
+ <div style="height: 20px;"></div>
+ 
+
+<!-- CONTENEDOR DE 4 TARJETAS -->
+<div class="beneficios-container">
+  <!-- Bloque de Envíos Gratis -->
+  <div class="beneficio">
+      <div class="icono">
+          <img src="camion.jpg" alt="Icono envío gratis">
+      </div>
+      <div class="texto">
+          <h3>ENVÍOS GRATIS</h3>
+          <p>Para compras por todo Santa Cruz</p>
+      </div>
+  </div>
+  <!-- Bloque de Pagos Fáciles -->
+  <div class="beneficio">
+      <div class="icono">
+          <img src="dinero.png" alt="Icono pagos fáciles">
+      </div>
+      <div class="texto">
+          <h3>PAGOS FÁCILES</h3>
+          <p>Puede realizar los pagos por todos los medios</p>
+      </div>
+  </div>
+  <!-- Bloque de Productos de Calidad -->
+  <div class="beneficio">
+      <div class="icono">
+          <img src="caja.png" alt="Icono productos de calidad">
+      </div>
+      <div class="texto">
+          <h3>PRODUCTOS DE CALIDAD</h3>
+          <p>Contamos con los mejores productos del mercado</p>
+      </div>
+  </div>
+  <!-- Bloque de Alguna Pregunta -->
+  <div class="beneficio">
+      <div class="icono">
+          <img src="incognita.png" alt="Icono alguna pregunta">
+      </div>
+      <div class="texto">
+          <h3>¿ALGUNA PREGUNTA?</h3>
+          <p>Envíanos un mensaje y te responderemos a la brevedad</p>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Línea para separar secciones -->
+<div style="height: 50px;"></div>
+
+<!-- ESTRUCTURA DEL FONDO DE LOS ANIMALITOS ANIMADOS -->
+<div class="page-container">
+  <div class="movie-section">
+    <div class="header">
+      <h1>¡GRACIAS POR VISITARNOS Y QUE TENGAS UN BUEN DÍA!</h1>
+      <h2>-Te presentamos los valores que transmitimos en -ZoofiPets-</h2>
+      <div class="header-image">
+        <!-- Imagen decorativa de fondo (patitas) -->
+        <img src="fondo1.png" alt="patitas">
+      </div>
+    </div>
+
+    <!-- SECCIÓN DE TARJETAS ANIMADAS: Valores de ZoofiPets -->
+    <div class="movie-grid">
+      
+      <!-- TARJETA ANIMADA 1: Compasión -->
+      <div class="text-center">
+        <div class="movie-card">
+          <img src="perro1.jpg" alt="Perrito">
+          <div class="card-overlay">
+            <h5 class="card-title">-Compasión-</h5>
+            <p class="card-description">Empatía y cuidado amoroso hacia animales y sus dueños</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA ANIMADA 2: Profesionalismo -->
+      <div class="text-center">
+        <div class="movie-card">
+          <img src="gato1.png" alt="gatito">
+          <div class="card-overlay">
+            <h5 class="card-title">-Profesionalismo-</h5>
+            <p class="card-description">Estándares éticos y técnicos en servicios veterinarios</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA ANIMADA 3: Dedicación -->
+      <div class="text-center">
+        <div class="movie-card">
+          <img src="perro2.png" alt="Perrito">
+          <div class="card-overlay">
+            <h5 class="card-title">-Dedicación-</h5>
+            <p class="card-description">Compromiso con el cuidado integral y personalizado</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA ANIMADA 4: Transparencia -->
+      <div class="text-center">
+        <div class="movie-card">
+          <img src="gato3.jpg" alt="gatito">
+          <div class="card-overlay">
+            <h5 class="card-title">-Transparencia-</h5>
+            <p class="card-description">Comunicación clara, honesta y confiable</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA ANIMADA 5: Excelencia -->
+      <div class="text-center">
+        <div class="movie-card">
+          <img src="perro3.jpg" alt="Perrito">
+          <div class="card-overlay">
+            <h5 class="card-title">Excelencia</h5>
+            <p class="card-description">Búsqueda continua de calidad y mejora en servicios</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- SECCIÓN DE 3 TARJETAS DE CIERRE -->
+<div class="informacion-container">
+  <!-- Bloque de Dirección -->
+  <div class="info-bloque">
+      <div class="info-icono">
+          <!-- Imagen representativa de la ubicación -->
+          <img src="ubicacion.jpg" alt="Icono ubicación">
+      </div>
+      <div class="info-texto">
+          <h3>ENCUÉNTRANOS EN</h3>
+          <!-- Dirección física de la empresa -->
+          <p>Av. El Trompillo 300, Santa Cruz de la Sierra, Bolivia</p>
+      </div>
+  </div>
+
+  <!-- Bloque de Medios de Contacto -->
+  <div class="info-bloque">
+      <div class="info-icono">
+          <!-- Imagen representativa de contacto telefónico -->
+          <img src="telefono.jpg" alt="Icono teléfono">
+      </div>
+      <div class="info-texto">
+          <h3>MEDIOS DE CONTÁCTO</h3>
+          <!-- Información de contacto: teléfono, WhatsApp y correo -->
+          <p>Teléfono: 3-536325</p>
+          <p>Whatsapp: 760-09980</p>
+          <p>Email: Gerencia&#64;veterinarialassie.com</p>
+      </div>
+  </div>
+
+  <!-- Bloque de Horarios -->
+  <div class="info-bloque">
+      <div class="info-icono">
+          <!-- Imagen representativa de horarios -->
+          <img src="reloj.jpg" alt="Icono horario">
+      </div>
+      <div class="info-texto">
+          <h3>HORARIOS</h3>
+          <!-- Información de los horarios de atención -->
+          <p>Lunes - Viernes: 08:30 - 20:00</p>
+          <p>Sábados: 09:30 - 21:30</p>
+          <p>Emergencias: 24hrs todos los días</p>
+      </div>
+  </div>
+</div>
+
+<!-- SEPARADOR ENTRE SECCIONES -->
+<div style="height: 30px;"></div>
+
+<!-- SECCIÓN DE REDES SOCIALES -->
+<div class="social-section">
+  <!-- Encabezado de la sección -->
+  <h2>¡SIGUENOS EN TODAS NUESTRAS REDES!</h2>
+  <div class="social-cards">
+      <!-- Tarjeta de Facebook -->
+      <a href="https://www.facebook.com/profile.php?id=61558517858308" target="_blank" class="social-card">
+          <img src="facebook.webp" alt="Facebook">
+          <div class="social-card-body">
+              <h3>Facebook</h3>
+              <p>ZoofiPets</p>
+          </div>
+      </a>
+
+      <!-- Tarjeta de Instagram -->
+      <a href="https://instagram.com/zoofipets" target="_blank" class="social-card">
+          <img src="Instagram.webp" alt="Instagram">
+          <div class="social-card-body">
+              <h3>Instagram</h3>
+              <p>ZoofiPetss</p>
+          </div>
+      </a>
+
+      <!-- Tarjeta de WhatsApp -->
+      <a href="https://api.whatsapp.com/send?phone=59172123456" target="_blank" class="social-card">
+          <img src="wpps.webp" alt="WhatsApp">
+          <div class="social-card-body">
+              <h3>WhatsApp</h3>
+              <p>+591 79487339</p>
+          </div>
+      </a>
+
+      <!-- Tarjeta de TikTok -->
+      <a href="https://www.tiktok.com/@zoofipetss?lang=es" target="_blank" class="social-card">
+          <img src="tiktok.webp" alt="TikTok">
+          <div class="social-card-body">
+              <h3>TikTok</h3>
+              <p>ZoofiPetss</p>
+          </div>
+      </a>
+
+      <!-- Tarjeta de Twitter -->
+      <a href="https://twitter.co" target="_blank" class="social-card">
+          <img src="twitter.webp" alt="Twitter">
+          <div class="social-card-body">
+              <h3>Twitter</h3>
+              <p>-ZoofiPetss-</p>
+          </div>
+      </a>
+  </div>
+</div>
